@@ -9,8 +9,8 @@ diff(0, 180) === 180;
 diff(0, 190) === 170;       // не 190, а 170, потому что 170 меньше
 diff(120, 280) === 160;
 */
-const diff = (first, second) => {
-  if (first < 0 || second < 0 || first > 360 || second < 360) {
+exports.diff = (first, second) => {
+  if (first < 0 || second < 0 || first > 360 || second > 360) {
     return NaN;
   }
 
