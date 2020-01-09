@@ -3,6 +3,12 @@ const introToProgrammingModule = require('../intro_to_programming.js');
 
 describe('intro_to_programming:', () => {
   describe('test diff(first, second)', () => {
+    it('should return NaN with (0, -1)', () => {
+      assert.ok(Number.isNaN(introToProgrammingModule.diff(0, -1)));
+    });
+    it('should return NaN with (0, 370)', () => {
+      assert.ok(Number.isNaN(introToProgrammingModule.diff(0, 370)));
+    });
     it('should return 45 with (0, 45)', () => {
       assert.equal(introToProgrammingModule.diff(0, 45), 45);
     });
@@ -47,6 +53,21 @@ describe('intro_to_programming:', () => {
     });
     it('should return true with (496)', () => {
       assert.ok(introToProgrammingModule.isPerfect(496));
+    });
+  });
+
+  describe('test sumSquareDifference(n)', () => {
+    it('should return NaN with (-1)', () => {
+      assert.ok(Number.isNaN(introToProgrammingModule.sumSquareDifference(-1)));
+    });
+    it('should return NaN with (0)', () => {
+      assert.ok(Number.isNaN(introToProgrammingModule.sumSquareDifference(0)));
+    });
+    it('should return 0 with (1)', () => {
+      assert.equal(introToProgrammingModule.sumSquareDifference(1), 0);
+    });
+    it('should return 2640 with (10)', () => {
+      assert.equal(introToProgrammingModule.sumSquareDifference(10), 2640);
     });
   });
 });

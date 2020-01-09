@@ -50,3 +50,28 @@ exports.isPerfect = (number) => {
 
   return (number === allDividerSum);
 };
+
+/*
+Сумма квадратов первых десяти натуральных чисел это 1^2 + 2^2 + 3^2 + ... + 10^2 = 385.
+Квадрат суммы первых десяти натуральных чисел это (1 + 2 + 3 + ... + 10)^2 = 552 = 3025.
+Разница между квадратом суммы и суммой квадратов первых десяти натуральных чисел: 3025 − 385 = 2640.
+
+Напишите функцию sumSquareDifference,
+которая принимает аргумент n и возвращает
+разницу между квадратом суммы и суммой
+квадратов первых n натуральных чисел.
+*/
+exports.sumSquareDifference = (n) => {
+  if (n <= 0) {
+    return NaN;
+  }
+
+  let numberSum = 1;
+  let squareNumberSum = 1;
+  for (let number = 2; number <= n; number += 1) {
+    numberSum += number;
+    squareNumberSum += number ** 2;
+  }
+
+  return (numberSum ** 2) - squareNumberSum;
+};
