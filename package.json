@@ -4,7 +4,10 @@
   "description": "Hexlet course test task solutions.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/*.js"
+    "test" : "npm run-script testAll",
+    "testAll" : "npm-run-all -p mochaTest jasmineTest",
+    "mochaTest": "mocha tests/mocha/*.js",
+    "jasmineTest": "echo Not Found"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.19.1",
     "eslinter": "^3.2.1",
-    "mocha": "^7.0.0"
+    "mocha": "^7.0.0",
+    "npm-run-all": "^4.1.5"
   }
 }
