@@ -1,5 +1,5 @@
 const assert = require('assert');
-const introToProgrammingModule = require('../../intro_to_programming.js');
+const introToProgrammingModule = require('../../courses/intro_to_programming.js');
 
 describe('intro_to_programming:', () => {
   describe('test diff(first, second)', () => {

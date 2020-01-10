@@ -34,3 +34,4 @@
 # Other
 node_modules
 .eslintrc.json
+spec
