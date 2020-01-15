@@ -33,25 +33,25 @@ describe('intro_to_programming:', () => {
 
   describe('test isPerfect(number)', () => {
     it('should return false with (-1)', () => {
-      expect(introToProgrammingModule.isPerfect(-1)).toBeFalse();
+      expect(introToProgrammingModule.isPerfect(-1)).toBe(false);
     });
     it('should return false with (0)', () => {
-      expect(introToProgrammingModule.isPerfect(0)).toBeFalse();
+      expect(introToProgrammingModule.isPerfect(0)).toBe(false);
     });
     it('should return false with (1)', () => {
-      expect(introToProgrammingModule.isPerfect(1)).toBeFalse();
+      expect(introToProgrammingModule.isPerfect(1)).toBe(false);
     });
     it('should return false with (15)', () => {
-      expect(introToProgrammingModule.isPerfect(15)).toBeFalse();
+      expect(introToProgrammingModule.isPerfect(15)).toBe(false);
     });
     it('should return true with (6)', () => {
-      expect(introToProgrammingModule.isPerfect(6)).toBeTrue();
+      expect(introToProgrammingModule.isPerfect(6)).toBe(true);
     });
     it('should return true with (28)', () => {
-      expect(introToProgrammingModule.isPerfect(28)).toBeTrue();
+      expect(introToProgrammingModule.isPerfect(28)).toBe(true);
     });
     it('should return true with (496)', () => {
-      expect(introToProgrammingModule.isPerfect(496)).toBeTrue();
+      expect(introToProgrammingModule.isPerfect(496)).toBe(true);
     });
   });
 
