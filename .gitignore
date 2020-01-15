@@ -34,4 +34,4 @@
 # Other
 node_modules
 .eslintrc.json
-spec
+npm-shrinkwrap.json
